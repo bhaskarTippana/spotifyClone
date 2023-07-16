@@ -1,0 +1,370 @@
+.app{
+    flex-grow: 1;
+    padding: 10px 0;
+}
+
+
+.app-body{
+    width: 100%;
+    min-height: calc(100vh - 93px);
+    max-height: calc(100vh - 93px);
+    border-radius: 5px;
+    background-color: var(--shade);
+    overflow-y: scroll;
+}
+
+
+.head{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(18, 17, 17, 0.873);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 999;
+    
+}
+
+
+.right,.left{
+    display: flex;
+    gap: 5px;
+}
+.left{
+    margin-left: 20px;
+}
+
+.box{
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 100%;
+}
+
+.banner{
+    border-radius: 25px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgb(15, 15, 13);
+    padding: 0 12px;
+}
+
+.banner1{
+    border-radius: 25px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0 12px;
+    color: black;
+    font-weight: 600;
+}
+
+.settings{
+    gap: 1em;
+    display: none;
+    overflow: hidden;
+}
+.heading h3{
+    margin: 1em 0;
+}
+
+
+.card{
+    flex-direction: row;
+    flex-grow: 1;
+    display: flex;
+    background-color: #242424;
+    height: 80px;
+    width: 100%;
+    margin: 6px auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.img{
+width: 80px;
+height: 80px;
+overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .song-name{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    flex: auto;
+    transition: background-color .3s linear;
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.song-name p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 270px;
+    overflow: hidden;
+    padding-top: 12px;
+}
+
+
+.play-btn{
+    display: grid;
+    place-items: center;
+    top: 20px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(79, 187, 79);
+    box-shadow: 2px 3px 2px rgb(47, 47, 47);
+    border-radius: 50%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition: opacity .3s linear;
+    opacity: 0;
+}
+.card:hover .play-btn{
+    opacity: 1;
+    cursor: pointer;
+}
+.card:hover .song-name{
+    background-color: rgba(0, 0, 0, 0.441);
+}
+/* carousel */
+
+.music-hover{
+    width: 200px;
+    border-radius: 5px;
+    padding: 3px;
+
+}
+
+.music-car .img{
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    background-color: red;
+}
+.play-btn1{
+    display: grid;
+    place-items: center;
+    /* top: 20px; */
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(79, 187, 79);
+    box-shadow: 2px 3px 2px rgb(47, 47, 47);
+    border-radius: 50%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    transition: opacity,bottom .3s linear;
+    opacity: 0;
+    bottom: -10px;
+}
+
+.music-car .img img{
+width: 100%;
+height: 100%;
+}
+.music-hover:hover .play-btn1{
+    opacity: 1;
+    bottom: 10px;
+
+}
+/* ends */
+
+/* player starts */
+
+.player{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+.play{
+    flex: 1;
+    /* background-color: rgb(51, 201, 201); */
+    display: flex;
+    /* padding: 10px; */
+    align-items: center;
+}
+
+.pim{
+    height: 56px;
+    width: 56px;
+
+}
+
+.pim img{
+    height: 100%;
+    width: 100%;
+}
+
+.phs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    #install{
+        display: none;
+        overflow: hidden;
+    }
+
+    .banner1{
+        display: none;
+        overflow: hidden;
+    }
+    .settings{
+        display: flex;
+    }
+
+    #user{
+        display: none;
+    }
+
+
+
+
+    .card{
+        height: 40px;
+        font-size: 8px;
+        margin: 3px 0;
+        overflow: hidden;
+    }
+    .card .img{
+      min-width: 40px;
+      max-width: 40px;
+        height: 40px;
+    }
+    .song-name .play-btn{display: none;
+    
+    }
+.song-name{
+    overflow: hidden;
+  
+}
+    .song-name p{
+       margin: 0 ;
+       text-overflow: ellipsis ;
+       white-space: nowrap;
+       padding: 25px 3px;
+    }
+
+    .col-6{
+padding: 0px 4px;
+    }
+
+    .mh2 {
+        display: none;
+    } 
+    #carousel .col-4{
+        padding: 0;
+    }
+
+    .music-hover{
+        width: 95px;
+        border-radius: 5px;
+        padding: 3px;
+    
+    }
+    
+    .music-car .img{
+        width: 100%;
+        height: 90px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        background-color: red;
+    }
+    .play-btn1{
+        display: grid;
+        place-items: center;
+        /* top: 20px; */
+        right: 5px;
+        width: 24px;
+        height: 24px;
+        background-color: rgb(79, 187, 79);
+        box-shadow: 2px 3px 2px rgb(47, 47, 47);
+        border-radius: 50%;
+        position: absolute;
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        transition: opacity,bottom .3s linear;
+        opacity: 0;
+        bottom: -10px;
+    }
+    
+    .music-car .img img{
+    width: 100%;
+    height: 100%;
+    }
+    .music-hover:hover .play-btn1{
+        opacity: 1;
+        bottom: 10px;
+    
+    }
+}
+
+@media  (min-width:500px) and (max-width:1050px){
+    .song-name .play-btn{display: none;
+    
+    }
+    .song-name p{
+font-size: 12px;
+    }
+}

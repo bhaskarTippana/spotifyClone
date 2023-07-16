@@ -1,0 +1,181 @@
+@import url("./aside.css");
+
+@import url("./mainapp.css");
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100&display=swap');
+
+
+
+
+:root{
+    --mainbgColor: #000000;
+    --shade: #121212;
+    --lightshade:#242424;
+
+
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--mainbgColor);
+    padding: 0 12px;
+    flex-direction: column;
+    color: aliceblue;
+    min-width: 390px;
+    overflow: hidden;
+}
+.mm{
+    height: calc(100vh - 72px);
+    background-color: var(--mainbgColor);
+    display: flex;
+    overflow: hidden;
+    gap: 12px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+
+
+
+.player{
+    height: 72px;
+    width: 100%;
+    background-color: var(--mainbgColor);
+    /* background-color: rgb(128, 255, 0); */
+    overflow: hidden;
+    display: flex;
+}
+.pii{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 30px;
+}
+
+.playcolumn{
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.plb{
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+    align-items: center;
+    margin-left: 210px;
+}
+.pl{
+    display: flex;
+    gap: 10px;
+    /* margin-right: 150px; */
+}
+.pl1{
+
+    width:550px ;
+    border-radius: 5px;
+    /* background-color: aquamarine; */
+    position: relative;
+    height: 5px;
+    background-color: aliceblue;
+    top: 10px;
+}
+
+.pl2{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgb(160, 255, 105);
+    position: absolute;
+    left: 3px;
+    top: -2px;
+}
+
+.playlast{
+    display: flex;
+    align-items: center;
+    /* margin-top: 15px; */
+    /* margin-left: 200px; */
+
+}
+
+.ll{
+    height: 3px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(245, 250, 248);
+    margin-top: -20px;
+}
+
+.ll1{
+    width: 150px;
+    height:5px ;
+    border-radius: 5px;
+    position: relative;
+    /* top: -15px; */
+}
+
+.ll2{
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color:white;
+    top: -2.5px;
+    right: 15px;
+}
+
+
+/* jhbhj */
+/* footer section */
+#footer {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.footer-wraper {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: rgba(49, 46, 46, 0.925);
+}
+
+.social-icon{
+    font-size: 24px;
+}
